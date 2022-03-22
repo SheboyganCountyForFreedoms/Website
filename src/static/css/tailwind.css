@@ -5,16 +5,16 @@
 /*Your Custom CSS Goes here*/
 
 h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+	@apply text-5xl tracking-tighter mb-3 text-center md:text-6xl lg:text-7xl max-w-sm md:max-w-md lg:max-w-2xl;
 }
 
 h3 {
-  @apply text-2xl font-bold mb-3;
+	@apply text-2xl font-bold mb-3;
 }
 
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  @apply bg-gray-800;
+	@apply bg-gray-800;
 }

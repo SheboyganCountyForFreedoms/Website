@@ -4,7 +4,7 @@ backend:
   branch: master
   ### enable below lines for github integration ###
   # name: github
-  # repo: surjithctly/neat-starter
+  # repo: 
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
@@ -12,15 +12,15 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
+  - label: "Articles"
+    name: "articles"
     folder: "src/posts"
     create: true
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Description", name: "desc", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -35,23 +35,18 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "items"
-        file: "src/_data/navigation.yaml"
-        fields:
-          - label: Nav Items
-            name: items
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
+      - label: "Featured"
         name: "links"
-        file: "src/_data/quicklinks.yaml"
+        file: "src/_data/featured.yaml"
         fields:
-          - label: Nav Items
+          - label: Events
+            name: events
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: URL, name: url, widget: string }
+              - { label: Description, name: desc, widget: string }
+          - label: Links
             name: links
             widget: list
             collapsed: false
@@ -59,10 +54,10 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: URL, name: url, widget: string }
               - { label: Description, name: desc, widget: string }
-      - label: "Meta Settings"
-        name: "settings"
-        file: "src/_data/settings.yaml"
+      - label: "Site"
+        name: "site"
+        file: "src/_data/site.yaml"
         fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
+          - { label: Title, name: title, widget: string }
           - { label: URL, name: url, widget: string }
+          - { label: Description, name: desc, widget: string }

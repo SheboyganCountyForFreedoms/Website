@@ -1,0 +1,16 @@
+events:
+  - title: "April 5: Spring election"
+    url: "https://www.sheboygancountygop.com/voter-guide-for-sheboygan-county/"
+    desc: Local candidates need your support. Find yours on the voter guide.
+
+links:
+  - title: Join our Mailing List
+    url: "https://static.mailerlite.com/webforms/submit/z6h4d0"
+    desc: We send updates as local freedom-related issues arise.
+  - title: Join the Discussion
+    url: "https://join.slack.com/t/sheboygan-freedoms/shared_invite/zt-15uoda3cx-fALzM_ca_iC5qRpIyW_nLQ"
+    desc: We use Slack to discuss political topics of local importance.
+  - title: Email Us
+    url: "mailto:hello@sheboygancountyforfreedoms.org"
+    desc: Have a direct question or comment? Let us know.
+  
